@@ -1,10 +1,15 @@
+import { Inter } from "next/font/google";
 import Image from "next/image";
 
-export default function Hero() {
+interface HeroProps {
+  img?:string;
+}
+
+export default function Hero({ img = "/images/hero-bg.jpg"}: HeroProps) {
   return (
     <div className="relative h-screen flex items-center justify-center text-center text-white">
       <Image
-        src="/images/hero-bg.jpg"
+        src={img}
         alt="Hero Background"
         fill
         className="object-cover -z-10"
@@ -20,6 +25,5 @@ export default function Hero() {
         </p>
       </div>
     </div>
-
   )
 }
