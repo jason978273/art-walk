@@ -1,11 +1,12 @@
 import React from 'react'
+import WalkPage from '@/components/WalkPage'
+import { walks } from '@/data/walks'
 
-type Props = {}
-
-const AmblesideWalk = (props: Props) => {
+export default function AmblesideWalk() {
+  const walk = walks.find(w => w.id === 'ambleside')!
   return (
-    <div>Ambleside</div>
+    <WalkPage walk={walk}>
+      
+    </WalkPage>
   )
 }
-
-export default AmblesideWalk
