@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React from 'react'
-import { Walk } from '@/data/walks'
+import { Walk } from '../data/walks'
 
 export default function WalkCard({ walk }: { walk: Walk }) {
   return (

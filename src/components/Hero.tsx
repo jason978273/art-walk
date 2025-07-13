@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Image from "next/image";
 
 interface HeroProps {
@@ -18,10 +17,10 @@ export default function Hero({ img = "/images/hero-bg.jpg"}: HeroProps) {
 
       <div className="max-w-4xl px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-lg">
-          Discover West Vancouver's Public Art
+          Discover West Vancouver&apos;s Public Art
         </h1>
         <p className="text-xl md:text-2xl max-w-2xl mx-auto">
-          Explore curated walking routes through the city's best public art and sculptures.
+          Explore curated walking routes through the city&apos;s best public art and sculptures.
         </p>
       </div>
     </div>

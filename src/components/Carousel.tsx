@@ -2,7 +2,7 @@
 
 import WalkCard from "./WalkCard"
 import { useState, useEffect } from "react"
-import { walks } from "@/data/walks"
+import { walks } from "../data/walks"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 
