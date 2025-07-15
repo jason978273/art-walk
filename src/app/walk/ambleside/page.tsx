@@ -4,6 +4,7 @@ import React from 'react'
 import WalkPage from '@/components/WalkPage'
 import WalkHeader from '@/components/WalkHeader'
 import { walks } from '@/data/walks'
+import Map from '@/components/Map'
 
 export default function AmblesideWalk() {
   const walk = walks.find(w => w.id === 'ambleside')!
@@ -14,6 +15,7 @@ export default function AmblesideWalk() {
         <WalkHeader />
         <WalkPage walk={walk}>
           {/* Add specific Ambleside content here */}
+          {walk.interactiveMap && <Map src={walk.interactiveMap} title={`${walk.title} Interactive Map`}/>}
         </WalkPage>
       </div>
     </div>

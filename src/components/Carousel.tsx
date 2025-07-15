@@ -42,7 +42,7 @@ export default function Carousel() {
                   {walks.map((walk) => (
                     <div key={walk.id} className="w-full flex-shrink-0 px-4">
                       <WalkCard walk={walk} />
-                      </div>
+                    </div>
                   ))}
                 </div>
             </div>

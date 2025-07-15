@@ -1,11 +1,21 @@
+'use client'
+
 import React from 'react'
+import WalkPage from '@/components/WalkPage'
+import WalkHeader from '@/components/WalkHeader'
+import { walks } from '@/data/walks'
 
-type Props = {}
-
-const dundaraveWalk = (props: Props) => {
+export default function DundaraveWalk() {
+  const walk = walks.find(w => w.id === 'dundarave')!
+  
   return (
-    <div>dundaraveWalk</div>
+    <div className='min-h-screen'>
+      <div className='max-w-4xl mx-auto px-4 py-8'>
+        <WalkHeader />
+        <WalkPage walk={walk}>
+          {/* Add specific Dundarave content here */}
+        </WalkPage>
+      </div>
+    </div>
   )
 }
-
-export default dundaraveWalk
