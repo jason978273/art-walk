@@ -16,7 +16,7 @@ export default function Map({
   return (
     <div className={`w-full mb-8 ${className}`}> 
       <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-        <div className="relative w-full h-0 pb-[60%] md:pb-[50%]">
+        <div className="relative w-full h-0 pb-[80%] md:pb-[75%] lg:pb-[70%]">
           <iframe
             src={src}
             title={title}

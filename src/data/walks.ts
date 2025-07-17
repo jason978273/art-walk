@@ -16,7 +16,7 @@ export const walks: Walk[] = [
     image: '/images/ambleside.jpg',
     href: '/walk/ambleside',
     map: '/maps/amblesideMap.jpg',
-    interactiveMap: 'https://www.openstreetmap.org/export/embed.html?bbox=-123.2%2C49.3%2C-123.1%2C49.35'
+    interactiveMap: 'https://dwvmaps.westvancouver.ca'
   },
   {
     id: 'hollyburn',
@@ -25,7 +25,7 @@ export const walks: Walk[] = [
     image: '/images/hollyburn.jpg',
     href: '/walk/hollyburn',
     map: '/maps/hollyburnMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?draft=true&id=1379154fb98d4f538c1de79ef37fbfba&page=Page#data_s=id%3AdataSource_1-196d07c68a8-layer-2%3A65',
+    interactiveMap: 'https://dwvmaps.westvancouver.ca',
 
   },
   {
@@ -35,7 +35,7 @@ export const walks: Walk[] = [
     image: '/images/dundarave.jpg',
     href: '/walk/dundarave',
     map: '/maps/dundaraveMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?draft=true&id=1379154fb98d4f538c1de79ef37fbfba&page=Page#data_s=id%3AdataSource_1-196d07c68a8-layer-2%3A65',
+    interactiveMap: 'https://dwvmaps.westvancouver.ca',
 
   },
 ]
