@@ -5,8 +5,6 @@ import { useState, useEffect } from "react"
 import { walks } from "../data/walks"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-
-
 export default function Carousel() {
   const [currentSlide, setCurrentslide] = useState(0)
   const nextSlide = () => {
@@ -22,9 +20,9 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-4xl mx-auto theme-bg-primary">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center my-8 text-white">
+        <h2 className="text-4xl font-bold text-center my-8 theme-text-primary">
           Featured Walks
         </h2>
         <div className="relative max-w-6xl mx-auto">
@@ -46,9 +44,9 @@ export default function Carousel() {
                   ))}
                 </div>
             </div>
-              <ChevronLeft size={36} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10"
+              <ChevronLeft size={36} className="absolute left-4 top-1/2 transform -translate-y-1/2 theme-text-primary cursor-pointer z-10"
                 onClick={prevSlide} />
-              <ChevronRight size={36} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white cursor-pointer z-10"
+              <ChevronRight size={36} className="absolute right-4 top-1/2 transform -translate-y-1/2 theme-text-primary cursor-pointer z-10"
                 onClick={nextSlide} />
         </div>
       </div>
