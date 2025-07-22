@@ -3,6 +3,8 @@ import { Walk } from "../data/walks";
 import Image from "next/image";
 import Map from "./Map";
 import ContentCard from "./ContentCard";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 interface WalkPageProps {
     walk: Walk;
@@ -19,15 +21,34 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
               <p className="mb-6 theme-text-secondary">
                 {walk.description}
               </p>
-              <div className="w-4/5 mx-auto mb-6">
+              
+              <div className="w-4/5 mx-auto mb-8">
                   <Image src={walk.map} alt='Walk Static Map' width={800} height={600} className="w-full h-auto rounded-lg"/>
               </div>
-                {walk.interactiveMap && (
-                    <Map src={walk.interactiveMap} 
-                    title={`${walk.title} Interactive Map`}
-                    className="mb-8"/>
-                )}
-              <div className="space-y-4">
+              
+              {walk.interactiveMap && (
+                  <div className="space-y-4 mb-8">
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                          <h2 className="text-xl md:text-2xl font-semibold theme-text-primary">Interactive Map</h2>
+                          <Link 
+                              href={walk.interactiveMap}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-blue-600 text-white font-semibold text-sm sm:text-base rounded-lg hover:bg-blue-700/80 transition-colors w-full sm:w-auto justify-center sm:justify-start"
+                          >
+                              <ExternalLink className="w-4 h-4" />
+                              Open Full Screen
+                          </Link>
+                      </div>
+                      <Map 
+                          src={walk.interactiveMap} 
+                          title={`${walk.title} Interactive Map`}
+                          className=""
+                      />
+                  </div>
+              )}
+
+              <div className="space-y-8">
                 <ContentCard 
                   walkingTime={walk.walkingTime}
                   recommendedTime={walk.recommendedTime}
@@ -36,6 +57,7 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
                   highlights={walk.highlights}
                   walkTitle={walk.title}
                 />
+                
                 {children}
               </div>
           </div>

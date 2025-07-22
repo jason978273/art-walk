@@ -16,11 +16,11 @@ export default function Map({
   return (
     <div className={`w-full mb-8 ${className}`}> 
       <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-        <div className="relative w-full h-0 pb-[80%] md:pb-[75%] lg:pb-[70%]">
+        <div className="relative w-full h-0 pb-[125%] md:pb-[75%] lg:pb-[70%]">
           <iframe
             src={src}
             title={title}
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute inset-0 w-full h-full"
             style={{ border: 0 }}
             allowFullScreen
             allow="geolocation"
