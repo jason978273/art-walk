@@ -1,3 +1,10 @@
+export type ClickableHighlight = {
+  name: string
+  url: string
+  type?: 'sponsor' | 'attraction' | 'info' | 'external'
+  description?: string
+}
+
 export type Walk = {
   id: string
   title: string
@@ -11,6 +18,7 @@ export type Walk = {
   distance?: string
   difficulty?: string
   highlights?: string[]
+  clickableHighlights?: ClickableHighlight[] // Add this new field
 }
 
 export const walks: Walk[] = [
@@ -26,7 +34,27 @@ export const walks: Walk[] = [
     recommendedTime: "40 min",
     distance: "1.5 km",
     difficulty: "Moderate",
-    highlights: ["Mountain Views", "Waterfront Promenade", "Public Art", "Beach Access"]
+    highlights: ["Mountain Views", "Waterfront Promenade", "Public Art", "Beach Access"],
+    clickableHighlights: [
+      {
+        name: "Crema Cafe Bar",
+        url: "https://www.cremacafebar.com",
+        type: "sponsor",
+        description: "Cafe with waterfront views"
+      },
+      {
+        name: "Ambleside Park Information",
+        url: "https://westvancouver.ca/parks-recreation/parks/ambleside-park",
+        type: "info",
+        description: "Official park information"
+      },
+      {
+        name: "Centennial Seawalk",
+        url: "https://westvancouver.ca/parks-recreation/parks-trails/centennial-seawalk",
+        type: "attraction",
+        description: "Scenic walking path along the ocean"
+      }
+    ]
   },
   {
     id: 'hollyburn',
@@ -40,7 +68,21 @@ export const walks: Walk[] = [
     recommendedTime: "40 min",
     distance: "1.2 km",
     difficulty: "Easy",
-    highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"]
+    highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"],
+    clickableHighlights: [
+      {
+        name: "Bean Around The World Coffee",
+        url: "https://beanaround.com",
+        type: "sponsor",
+        description: "Local coffee roaster with fresh brews"
+      },
+      {
+        name: "Hollyburn Country Club",
+        url: "https://hollyburncc.com",
+        type: "sponsor",
+        description: "Historic club with dining facilities"
+      }
+    ]
   },
   {
     id: 'dundarave',
@@ -54,6 +96,14 @@ export const walks: Walk[] = [
     recommendedTime: "20 min",
     distance: "2.0 km",
     difficulty: "Easy",
-    highlights: ["Dundarave Beach", "Ocean Views"]
+    highlights: ["Dundarave Beach", "Ocean Views"],
+    clickableHighlights: [
+      {
+        name: "Dundarave Village Shopping",
+        url: "https://dundaravevillage.ca",
+        type: "info",
+        description: "Local shops and businesses"
+      }
+    ]
   },
 ]

@@ -55,6 +55,7 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
                   distance={walk.distance}
                   difficulty={walk.difficulty}
                   highlights={walk.highlights}
+                  clickableHighlights={walk.clickableHighlights}
                   walkTitle={walk.title}
                 />
                 
