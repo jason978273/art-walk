@@ -17,11 +17,7 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
           <div className="max-w-7xl mx-auto px-4 py-8">
               <h1 className="text-3xl font-bold mb-4 theme-text-primary">
                 {walk.title}
-              </h1>
-              <p className="mb-6 theme-text-secondary">
-                {walk.description}
-              </p>
-              
+              </h1>          
               <div className="w-4/5 mx-auto mb-8">
                   <Image src={walk.map} alt='Walk Static Map' width={800} height={600} className="w-full h-auto rounded-lg"/>
               </div>
