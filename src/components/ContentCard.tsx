@@ -1,5 +1,5 @@
 import React from 'react'
-import { Clock, MapPin, Route, Users, ExternalLink, Coffee, Info, MapIcon, Star } from 'lucide-react'
+import { Clock, MapPin, Route, Users, ExternalLink, Info, MapIcon, Star } from 'lucide-react'
 import { ClickableHighlight } from '../data/walks'
 
 interface ContentCardProps {
@@ -101,7 +101,7 @@ export default function ContentCard({
             {highlights.map((highlight, index) => (
               <span 
                 key={index}
-                className="px-2 sm:px-3 py-1 bg-gray-800/50 dark:bg-gray-300/50 text-gray-300 dark:text-black rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md"
+                className="px-2 sm:px-3 py-1 bg-gray-800/50 dark:bg-gray-300/50 text-gray-300 dark:text-black rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md cursor-default"
               >
                 {highlight}
               </span>
