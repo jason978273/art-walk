@@ -3,11 +3,11 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='bg-gray-900 text-white border-t border-gray-700 mt-auto py-6 dark:bg-gray-100 dark:text-gray-900 dark:border-gray-300'>
+    <footer className='bg-white text-white border-t border-gray-700 mt-auto py-6'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
           <div className='sponsors'>
-            <h4 className='font-semibold mb-2 text-center md:text-left'>Our Partners and Sponsors</h4>
+            <h4 className='font-semibold mb-2 text-center text-gray-700 md:text-left'>Our Partners and Sponsors</h4>
             <div className='flex gap-4 justify-center md:justify-start'>
               <Image 
                 src="/images/westvan.jpg" 
@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           
           <div className='text-center md:text-right'>
-            <p className='text-sm text-gray-300 dark:text-gray-600'>
+            <p className='text-sm text-gray-600'>
               © {new Date().getFullYear()} West Vancouver Art Walk. All rights reserved.
             </p>
           </div>

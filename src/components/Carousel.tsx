@@ -44,9 +44,9 @@ export default function Carousel() {
                   ))}
                 </div>
             </div>
-              <ChevronLeft size={36} className="absolute left-4 top-1/2 transform -translate-y-1/2 theme-text-primary cursor-pointer z-10"
+              <ChevronLeft size={36} className="absolute left-4 top-1/2 transform -translate-y-1/2 theme-text-secondary cursor-pointer z-10"
                 onClick={prevSlide} />
-              <ChevronRight size={36} className="absolute right-4 top-1/2 transform -translate-y-1/2 theme-text-primary cursor-pointer z-10"
+              <ChevronRight size={36} className="absolute right-4 top-1/2 transform -translate-y-1/2 theme-text-secondary cursor-pointer z-10"
                 onClick={nextSlide} />
         </div>
       </div>

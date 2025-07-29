@@ -1,39 +1,20 @@
 @import "tailwindcss";
 
-/* Light theme (default) */
 :root {
-  --text-primary: #1f2937;     /* gray-800 */
-  --text-secondary: #4b5563;   /* gray-600 */
-  --text-muted: #6b7280;       /* gray-500 */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f9fafb;
-  --border-color: #e5e7eb;
+  --text-primary: #2eaf9e;    
+  --text-secondary: #d81963;
+  --text-muted: #6b7280;
+  --bg-primary: #2eaf9e;
+  --bg-secondary: #d81963;
+  --border-color: #ffffff;
 
   --background: #ffffff;
   --foreground: #171717;
   --font-geist-sans: 'Geist Sans' sans-serif;
   --font-geist-mono: 'Geist Mono' monospace; 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-primary: #2EAF9E;    /* gray-100 */
-    --text-secondary: #d81963;  /* gray-300 */
-    --text-thirdary:#2EAF9E;
-    --text-muted: #9ca3af;      /* gray-400 */
-    --bg-primary: #2EAF9E;      /* gray-900 */
-    --bg-secondary: #2e3135;    /* gray-800 */
-    --border-color: #374151;    /* gray-700 */
-
-    --background: #2EAF9E;
-    --foreground: #ededed;
-  }
-}
-
-/* Apply theme variables */
 .theme-text-primary { color: var(--text-primary); }
 .theme-text-secondary { color: var(--text-secondary); }
-.theme-text-thirdary { color: var(--text-thirdary); }
 .theme-text-muted { color: var(--text-muted); }
 .theme-bg-primary { background-color: var(--bg-primary); }
 .theme-bg-secondary { background-color: var(--bg-secondary); }

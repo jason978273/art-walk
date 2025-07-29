@@ -42,19 +42,19 @@ export default function WalkPage() {
           <div className="space-y-2">
             <Link 
               href="/walk/ambleside"
-              className="block p-2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:opacity-80 transition-opacity"
+              className="block p-2 bg-gray-900 text-white rounded hover:opacity-80 transition-opacity"
             >
               Ambleside Walk
             </Link>
             <Link 
               href="/walk/hollyburn"
-              className="block p-2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:opacity-80 transition-opacity"
+              className="block p-2 bg-gray-900 text-white rounded hover:opacity-80 transition-opacity"
             >
               Hollyburn Walk
             </Link>
             <Link 
               href="/walk/dundarave"
-              className="block p-2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 rounded hover:opacity-80 transition-opacity"
+              className="block p-2 bg-gray-900 text-white rounded hover:opacity-80 transition-opacity"
             >
               Dundarave Walk
             </Link>
