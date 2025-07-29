@@ -49,37 +49,36 @@ export default function ContentCard({
   return (
     <div className="rounded-lg p-4 sm:p-6">
       <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#00A1BA]">Walk Details</h2>
-      
-      <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
-        <div className="flex items-center text-white font-semibold p-2 rounded-lg bg-[#00A1BA]/80">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
+        <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
-          <div className="min-w-0">
-            <p className="text-xs sm:text-sm opacity-75 truncate">Walking Time</p>
-            <p className="font-semibold text-sm sm:text-base text-white truncate">{walkingTime}</p>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs sm:text-sm opacity-75 leading-tight">Walking</p>
+            <p className="font-semibold text-sm sm:text-base text-white leading-tight">{walkingTime}</p>
           </div>
         </div>
         
-        <div className="flex items-center text-white font-semibold p-2 rounded-lg bg-[#00A1BA]/80">
+        <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Route className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
-          <div className="min-w-0">
-            <p className="text-xs sm:text-sm opacity-75 truncate">Recommended</p>
-            <p className="font-semibold text-sm sm:text-base text-white truncate">{recommendedTime}</p>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs sm:text-sm opacity-75 leading-tight">Total</p>
+            <p className="font-semibold text-sm sm:text-base text-white leading-tight">{recommendedTime}</p>
           </div>
         </div>
         
-        <div className="flex items-center text-white font-semibold p-2 rounded-lg bg-[#00A1BA]/80">
+        <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
-          <div className="min-w-0">
-            <p className="text-xs sm:text-sm opacity-75 truncate">Distance</p>
-            <p className="font-semibold text-sm sm:text-base text-white truncate">{distance}</p>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs sm:text-sm opacity-75 leading-tight">Distance</p>
+            <p className="font-semibold text-sm sm:text-base text-white leading-tight">{distance}</p>
           </div>
         </div>
         
-        <div className="flex items-center text-white font-semibold p-2 rounded-lg bg-[#00A1BA]/80">
+        <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
-          <div className="min-w-0">
-            <p className="text-xs sm:text-sm opacity-75 truncate">Difficulty</p>
-            <p className="font-semibold text-sm sm:text-base text-white truncate">{difficulty}</p>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs sm:text-sm opacity-75 leading-tight">Difficulty</p>
+            <p className="font-semibold text-sm sm:text-base text-white leading-tight">{difficulty}</p>
           </div>
         </div>
       </div>

@@ -45,3 +45,7 @@ body {
 p, span, div, a, button, input, textarea {
   font-family: var(--font-body);
 }
+
+.grid-cols-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(min-content, max-content));
+}

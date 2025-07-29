@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { MoveLeft } from 'lucide-react'
+import { MoveLeft, House } from 'lucide-react'
 import { walks } from '@/data/walks'
 
 export default function WalkHeader() {
@@ -15,7 +15,8 @@ export default function WalkHeader() {
         href="/" 
         className='inline-flex items-center text-white hover:opacity-80 hover:underline hover:translate-x-1 transition-all duration-200 group min-w-fit'
       >
-        <MoveLeft className='ml-2 mr-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200'/>
+        <MoveLeft className='ml-2 mr-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 hidden sm:block'/>
+        <House className='ml-2 mr-2 w-4 h-4 transition-transform duration-200 block sm:hidden'/>
         <span className="font-medium hidden sm:inline text-sm sm:text-base lg:text-lg">Back to Home</span>
       </Link>
 
