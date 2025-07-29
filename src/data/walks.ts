@@ -72,15 +72,15 @@ export const walks: Walk[] = [
     clickableHighlights: [
       {
         name: "Bean Around The World Coffee",
-        url: "https://beanaround.com",
+        url: "https://batwcoffee.com/",
         type: "sponsor",
         description: "Local coffee roaster with fresh brews"
       },
       {
-        name: "Hollyburn Country Club",
-        url: "https://hollyburncc.com",
+        name: "Red Lion Bar and Grill",
+        url: "https://redlionbarandgrill.net",
         type: "sponsor",
-        description: "Historic club with dining facilities"
+        description: "Popular pub with local beers"
       }
     ]
   },
@@ -103,6 +103,12 @@ export const walks: Walk[] = [
         url: "https://dundaravevillage.ca",
         type: "info",
         description: "Local shops and businesses"
+      },
+      {
+        name: "Dundarave Park",
+        url: "https://westvancouver.ca/parks-recreation/parks-trails/dundarave-park",
+        type: "attraction",
+        description: "Beautiful beach park with picnic areas"
       }
     ]
   },

@@ -11,7 +11,7 @@ export default function WalkCard({ walk }: { walk: Walk }) {
         <Image src={walk.image} alt={walk.title} fill className='object-cover'/>
         </div>
         <div className='p-6'>
-          <h3 className='text-2xl font-bold mb-2 text-white dark:text-gray-900'>
+          <h3 className='text-2xl font-bold mb-2 theme-text-secondary dark:theme-text-secondary'>
             {walk.title}
           </h3>
           <p className='text-gray-300 dark:text-gray-600'>

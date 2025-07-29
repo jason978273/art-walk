@@ -47,24 +47,24 @@ export default function ContentCard({
   clickableHighlights = [],
 }: ContentCardProps) {
   return (
-    <div className="bg-gray-900 dark:bg-gray-100 rounded-lg shadow-md p-4 sm:p-6">
-      <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white dark:text-gray-900">Walk Details</h2>
+    <div className="bg-gray-900 dark:bg-white rounded-lg p-4 sm:p-6">
+      <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 theme-text-primary dark:theme-text-primary">Walk Details</h2>
       
       {/* Responsive Stats Grid - stack on mobile, 2x2 on small screens, 4 columns on larger */}
       <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
-        <div className="flex items-center text-gray-300 dark:text-gray-700 p-2 rounded-lg bg-gray-800/50 dark:bg-gray-200/50">
+        <div className="flex items-center text-white dark:theme-text-thirdary p-2 rounded-lg theme-bg-primary">
           <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0">
             <p className="text-xs sm:text-sm opacity-75 truncate">Walking Time</p>
-            <p className="font-semibold text-sm sm:text-base text-white dark:text-gray-900 truncate">{walkingTime}</p>
+            <p className="font-semibold text-sm sm:text-base text-white dark:text-white truncate">{walkingTime}</p>
           </div>
         </div>
         
-        <div className="flex items-center text-gray-300 dark:text-gray-700 p-2 rounded-lg bg-gray-800/50 dark:bg-gray-200/50">
+        <div className="flex items-center text-gray-300 dark:text-white p-2 rounded-lg theme-bg-primary dark:theme-bg-primary">
           <Route className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0">
             <p className="text-xs sm:text-sm opacity-75 truncate">Recommended</p>
-            <p className="font-semibold text-sm sm:text-base text-white dark:text-gray-900 truncate">{recommendedTime}</p>
+            <p className="font-semibold text-sm sm:text-base text-white dark:text-white truncate">{recommendedTime}</p>
           </div>
         </div>
         

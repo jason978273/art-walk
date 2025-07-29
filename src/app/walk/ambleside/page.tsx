@@ -9,7 +9,7 @@ export default function AmblesideWalk() {
   const walk = walks.find(w => w.id === 'ambleside')!
   
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen bg-white'>
       <div className='max-w-full md:max-w-6xl lg:max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-4 sm:py-8'>
         <WalkHeader />
         <WalkPage walk={walk}>

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <div className="theme-bg-primary">
+      <div className="bg-white">
         <Carousel />
       </div>
     </div>

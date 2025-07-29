@@ -20,10 +20,10 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className="relative max-w-4xl mx-auto theme-bg-primary">
+    <div className="relative max-w-6xl mx-auto bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center my-8 theme-text-primary">
-          Featured Walks
+          Explore the Curated Walks
         </h2>
         <div className="relative max-w-6xl mx-auto">
           {/* Desktop shows all 3 cards*/}

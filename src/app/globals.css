@@ -17,14 +17,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-primary: #f3f4f6;    /* gray-100 */
-    --text-secondary: #d1d5db;  /* gray-300 */
+    --text-primary: #2EAF9E;    /* gray-100 */
+    --text-secondary: #d81963;  /* gray-300 */
+    --text-thirdary:#2EAF9E;
     --text-muted: #9ca3af;      /* gray-400 */
-    --bg-primary: #0a0a0a;      /* gray-900 */
+    --bg-primary: #2EAF9E;      /* gray-900 */
     --bg-secondary: #2e3135;    /* gray-800 */
     --border-color: #374151;    /* gray-700 */
 
-    --background: #0a0a0a;
+    --background: #2EAF9E;
     --foreground: #ededed;
   }
 }
@@ -32,6 +33,7 @@
 /* Apply theme variables */
 .theme-text-primary { color: var(--text-primary); }
 .theme-text-secondary { color: var(--text-secondary); }
+.theme-text-thirdary { color: var(--text-thirdary); }
 .theme-text-muted { color: var(--text-muted); }
 .theme-bg-primary { background-color: var(--bg-primary); }
 .theme-bg-secondary { background-color: var(--bg-secondary); }
