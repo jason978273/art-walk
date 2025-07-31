@@ -97,7 +97,7 @@ export default function ContentCard({
             {highlights.map((highlight, index) => (
               <span 
                 key={index}
-                className="px-2 sm:px-3 py-1 bg-gray-300/50 text-gray-700 rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md cursor-default"
+                className="px-2 sm:px-3 py-1 bg-gray-300/50 text-gray-700 font-semibold rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md cursor-default"
               >
                 {highlight}
               </span>
