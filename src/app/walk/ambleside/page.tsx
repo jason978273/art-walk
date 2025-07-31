@@ -4,7 +4,6 @@ import React from 'react'
 import WalkPage from '@/components/WalkPage'
 import WalkHeader from '@/components/WalkHeader'
 import { walks } from '@/data/walks'
-import Map from '@/components/Map'
 
 export default function AmblesideWalk() {
   const walk = walks.find(w => w.id === 'ambleside')!

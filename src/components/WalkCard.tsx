@@ -11,10 +11,10 @@ export default function WalkCard({ walk }: { walk: Walk }) {
         <Image src={walk.image} alt={walk.title} fill className='object-cover'/>
         </div>
         <div className='p-6'>
-          <h3 className='text-2xl font-bold mb-2 text-gray-800'>
+          <h3 className='text-2xl font-bold mb-2 theme-text-secondary'>
             {walk.title}
           </h3>
-          <p className='text-gray-600'>
+          <p className='text-gray-700'>
             {walk.description}
           </p>
           </div>

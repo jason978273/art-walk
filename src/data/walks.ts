@@ -1,3 +1,10 @@
+export type ClickableHighlight = {
+  name: string
+  url: string
+  type?: 'sponsor' | 'attraction' | 'info' | 'external'
+  description?: string
+}
+
 export type Walk = {
   id: string
   title: string
@@ -6,6 +13,12 @@ export type Walk = {
   href: string
   map: string
   interactiveMap?: string
+  walkingTime?: string
+  recommendedTime?: string
+  distance?: string
+  difficulty?: string
+  highlights?: string[]
+  clickableHighlights?: ClickableHighlight[] // Add this new field
 }
 
 export const walks: Walk[] = [
@@ -16,7 +29,32 @@ export const walks: Walk[] = [
     image: '/images/ambleside.jpg',
     href: '/walk/ambleside',
     map: '/maps/amblesideMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca'
+    interactiveMap: 'https://dwvmaps.westvancouver.ca',
+    walkingTime: "25 min",
+    recommendedTime: "40 min",
+    distance: "1.5 km",
+    difficulty: "Moderate",
+    highlights: ["Mountain Views", "Waterfront Promenade", "Public Art", "Beach Access"],
+    clickableHighlights: [
+      {
+        name: "Crema Cafe Bar",
+        url: "https://www.cremacafebar.com",
+        type: "sponsor",
+        description: "Cafe with waterfront views"
+      },
+      {
+        name: "Ambleside Park Information",
+        url: "https://westvancouver.ca/parks-recreation/parks/ambleside-park",
+        type: "info",
+        description: "Official park information"
+      },
+      {
+        name: "Centennial Seawalk",
+        url: "https://westvancouver.ca/parks-recreation/parks-trails/centennial-seawalk",
+        type: "attraction",
+        description: "Scenic walking path along the ocean"
+      }
+    ]
   },
   {
     id: 'hollyburn',
@@ -26,7 +64,25 @@ export const walks: Walk[] = [
     href: '/walk/hollyburn',
     map: '/maps/hollyburnMap.jpg',
     interactiveMap: 'https://dwvmaps.westvancouver.ca',
-
+    walkingTime: "20 min",
+    recommendedTime: "40 min",
+    distance: "1.2 km",
+    difficulty: "Easy",
+    highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"],
+    clickableHighlights: [
+      {
+        name: "Bean Around The World Coffee",
+        url: "https://batwcoffee.com/",
+        type: "sponsor",
+        description: "Local coffee roaster with fresh brews"
+      },
+      {
+        name: "Red Lion Bar and Grill",
+        url: "https://redlionbarandgrill.net",
+        type: "sponsor",
+        description: "Popular pub with local beers"
+      }
+    ]
   },
   {
     id: 'dundarave',
@@ -36,6 +92,24 @@ export const walks: Walk[] = [
     href: '/walk/dundarave',
     map: '/maps/dundaraveMap.jpg',
     interactiveMap: 'https://dwvmaps.westvancouver.ca',
-
+    walkingTime: "10 min",
+    recommendedTime: "20 min",
+    distance: "2.0 km",
+    difficulty: "Easy",
+    highlights: ["Dundarave Beach", "Ocean Views"],
+    clickableHighlights: [
+      {
+        name: "Dundarave Village Shopping",
+        url: "https://dundaravevillage.ca",
+        type: "info",
+        description: "Local shops and businesses"
+      },
+      {
+        name: "Dundarave Park",
+        url: "https://westvancouver.ca/parks-recreation/parks-trails/dundarave-park",
+        type: "attraction",
+        description: "Beautiful beach park with picnic areas"
+      }
+    ]
   },
 ]
