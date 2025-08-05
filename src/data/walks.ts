@@ -35,7 +35,7 @@ export const walks: Walk[] = [
     recommendedTime: "40 min",
     distance: "1.5 km",
     difficulty: "Moderate",
-    highlights: ["Mountain Views", "Waterfront Promenade", "Public Art", "Beach Access"],
+    highlights: ["Ocean Views", "Waterfront Promenade", "Lions Gate Bridge", "Beach Access"],
     clickableHighlights: [
       {
         name: "Crema Cafe Bar",
