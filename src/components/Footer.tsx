@@ -8,7 +8,7 @@ export default function Footer() {
   ];
   
   return (
-    <footer className='bg-white text-white border-t border-gray-700 mt-auto py-6'>
+    <footer className='bg-white text-white border-t border-gray-300 mt-auto py-6'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex flex-col md:flex-row items-center justify-between gap-6'>
           <div className='sponsors'>
