@@ -37,7 +37,7 @@ export default function Map({
           href={src}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 theme-bg-primary hover:bg-blue-700 text-white rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 px-4 py-2 theme-bg-primary hover:theme-bg-secondary text-white rounded-lg transition-colors"
         >
           <ExternalLink className="w-4 h-4" />
           Open Full Map

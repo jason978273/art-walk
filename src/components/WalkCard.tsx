@@ -17,7 +17,10 @@ export default function WalkCard({ walk }: { walk: Walk }) {
           <p className='text-gray-700'>
             {walk.description}
           </p>
-          </div>
+        </div>
+        <p className='p-2 text-xs text-gray-500 italic'>
+            {walk.photoCredit}
+        </p>
       </div>
     </Link>
   )

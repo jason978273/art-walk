@@ -18,7 +18,8 @@ export type Walk = {
   distance?: string
   difficulty?: string
   highlights?: string[]
-  clickableHighlights?: ClickableHighlight[] // Add this new field
+  clickableHighlights?: ClickableHighlight[]
+  photoCredit?: string
 }
 
 export const walks: Walk[] = [
@@ -54,7 +55,9 @@ export const walks: Walk[] = [
         type: "attraction",
         description: "Scenic walking path along the ocean"
       }
-    ]
+    ],
+    photoCredit: "Photo by District of West Vancouver"
+
   },
   {
     id: 'hollyburn',
@@ -82,7 +85,8 @@ export const walks: Walk[] = [
         type: "sponsor",
         description: "Popular pub with local beers"
       }
-    ]
+    ],
+    photoCredit: "Photo by District of West Vancouver"
   },
   {
     id: 'dundarave',
@@ -110,6 +114,7 @@ export const walks: Walk[] = [
         type: "attraction",
         description: "Beautiful beach park with picnic areas"
       }
-    ]
+    ],
+    photoCredit: "Photo by ADBIA"
   },
 ]

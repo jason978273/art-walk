@@ -28,7 +28,7 @@ const getHighlightIcon = (type?: string) => {
 const getHighlightStyle = (type?: string) => {
   switch (type) {
     case 'sponsor':
-      return "bg-gradient-to-r from-yellow-700 to-yellow-500 hover:from-yellow-700 hover:to-yellow-600 text-white shadow-lg hover:shadow-xl"
+      return "bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white shadow-lg hover:shadow-xl"
     case 'info':
       return "bg-gradient-to-r from-blue-500 to-blue-300 hover:from-blue-400 hover:to-blue-300 text-white shadow-lg hover:shadow-xl"
     case 'attraction':
