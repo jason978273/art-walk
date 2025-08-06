@@ -5,12 +5,12 @@ import { SiFacebook, SiInstagram, SiX } from '@icons-pack/react-simple-icons'
 
 export default function Footer() {
   const sponsors = [
-    { src: "/images/wvcac_logo.jpg", alt: "West Vancouver Community Arts Council" },
     { src: "/images/westvan.jpg", alt: "West Vancouver" },
-    { src: "/images/wvcac_logo.jpg", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo.jpg", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo.jpg", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo.jpg", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
   ];
 
   const socialLinks = [
