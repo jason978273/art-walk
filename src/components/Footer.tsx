@@ -5,7 +5,7 @@ import { SiFacebook, SiInstagram, SiX } from '@icons-pack/react-simple-icons'
 
 export default function Footer() {
   const sponsors = [
-    { src: "/images/westvan.jpg", alt: "West Vancouver" },
+    { src: "/images/westvan.jpg", alt: "District of West Vancouver" },
     { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
     { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
     { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
@@ -24,7 +24,7 @@ export default function Footer() {
       <div className='max-w-7xl mx-auto px-4'>
         <div className='sponsors mb-8 text-center'>
           <h4 className='font-semibold mb-4 text-gray-700'>Our Partners and Sponsors</h4>
-          <div className='flex gap-4 justify-center items-center flex-wrap'>
+          <div className=' gap-4 justify-items-center grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto max-w-4xl'>
             {sponsors.map((sponsor, index) => (
               <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
                 <Image 
