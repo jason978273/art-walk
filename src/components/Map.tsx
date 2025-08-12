@@ -19,12 +19,16 @@ export default function Map({
   return (
     <div className={`w-full`}> 
       <div className="relative w-full rounded-lg overflow-hidden">
-        <div className="relative w-full h-0 pb-[125%] md:pb-[75%] lg:pb-[70%]">
+        <div className="relative w-full h-120 sm:h-160 md:h-180">
           <iframe
             src={src}
             title={title}
             className="absolute inset-0 w-full h-full"
-            style={{ border: 0 }}
+            style={{ 
+              border: 0,
+              touchAction:'manipulation',
+              WebkitOverflowScrolling: 'touch',
+             }}
             allowFullScreen
             allow="geolocation"
             loading="lazy"

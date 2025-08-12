@@ -7,10 +7,8 @@ export default function Footer() {
   const sponsors = [
     { src: "/images/westvan.jpg", alt: "District of West Vancouver" },
     { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
-    { src: "/images/wvcac_logo_blue.png", alt: "West Vancouver Community Arts Council" },
+    { src: "/images/adbia.png", alt: "Amberside and Dundarave Business Improvement Association" },
+    { src: "/images/canada.jpg", alt: "Government of Canada" },
   ];
 
   const socialLinks = [

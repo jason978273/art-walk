@@ -30,7 +30,7 @@ export const walks: Walk[] = [
     image: '/images/ambleside.jpg',
     href: '/walk/ambleside',
     map: '/maps/amblesideMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca',
+    interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=bddd54acb736406b81f5f448643ab230',
     walkingTime: "30 min",
     recommendedTime: "40 min",
     distance: "1.5 km",
@@ -38,7 +38,7 @@ export const walks: Walk[] = [
     highlights: ["Ocean Views", "Waterfront Promenade", "Lions Gate Bridge", "Beach Access"],
     clickableHighlights: [
       {
-        name: "Crema Cafe Bar",
+        name: "Future Sponsor Here",
         url: "https://www.cremacafebar.com",
         type: "sponsor",
         description: "Cafe with waterfront views"
@@ -66,7 +66,7 @@ export const walks: Walk[] = [
     image: '/images/hollyburn.jpg',
     href: '/walk/hollyburn',
     map: '/maps/hollyburnMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca',
+    interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=bddd54acb736406b81f5f448643ab230',
     walkingTime: "25 min",
     recommendedTime: "40 min",
     distance: "1.2 km",
@@ -74,13 +74,13 @@ export const walks: Walk[] = [
     highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"],
     clickableHighlights: [
       {
-        name: "Bean Around The World Coffee",
+        name: "Future Sponsor Here",
         url: "https://batwcoffee.com/",
         type: "sponsor",
         description: "Local coffee roaster with fresh brews"
       },
       {
-        name: "Red Lion Bar and Grill",
+        name: "Future Sponsor Here",
         url: "https://redlionbarandgrill.net",
         type: "sponsor",
         description: "Popular pub with local beers"
@@ -95,7 +95,7 @@ export const walks: Walk[] = [
     image: '/images/dundarave.jpg',
     href: '/walk/dundarave',
     map: '/maps/dundaraveMap.jpg',
-    interactiveMap: 'https://dwvmaps.westvancouver.ca',
+    interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=bddd54acb736406b81f5f448643ab230',
     walkingTime: "10 min",
     recommendedTime: "20 min",
     distance: "1.0 km",
