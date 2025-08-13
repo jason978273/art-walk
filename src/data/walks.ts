@@ -38,10 +38,10 @@ export const walks: Walk[] = [
     highlights: ["Ocean Views", "Waterfront Promenade", "Lions Gate Bridge", "Beach Access"],
     clickableHighlights: [
       {
-        name: "Future Sponsor Here",
-        url: "https://www.cremacafebar.com",
+        name: "Van Cha",
+        url: "https://www.instagram.com/vanchatea/?hl=en",
         type: "sponsor",
-        description: "Cafe with waterfront views"
+        description: "Chinese Style Tea House"
       },
       {
         name: "Ambleside Park Information",
