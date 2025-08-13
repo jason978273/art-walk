@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mb-6'>
-          <div className='contact text-center md:text-left min-h-[200px] flex flex-col justify-end'>
+          <div className='contact text-center md:text-left md:min-h-[200px] md:flex md:flex-col md:justify-end'>
             <div className="flex justify-center md:justify-start mb-4">
               <Image 
                 src="/images/WVCAC-logo-horz_blue.jpg"
@@ -77,7 +77,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className='social text-center md:text-right min-h-[200px] flex flex-col justify-end'>
+          <div className='social text-center md:text-right md:min-h-[200px] md:flex md:flex-col md:justify-end'>
             <div>
               <h4 className='font-semibold mb-4 text-gray-700'>Follow Us</h4>
               <div className='flex gap-3 justify-center md:justify-end'>
