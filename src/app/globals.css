@@ -13,6 +13,12 @@
   --font-title: 'Century Gothic', 'Futura', 'Avant Garde', sans-serif;
   --font-body: 'Avenir', sans-serif; 
 }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 .theme-text-primary { color: var(--text-primary); }
 .theme-text-secondary { color: var(--text-secondary); }
 .theme-text-muted { color: var(--text-muted); }

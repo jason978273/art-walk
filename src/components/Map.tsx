@@ -17,8 +17,8 @@ export default function Map({
 }: MapProps) {
   
   return (
-    <div className={`w-full`}> 
-      <div className="relative w-full rounded-lg overflow-hidden">
+    <div className="w-full relative z-10"> 
+      <div className="relative w-full rounded-lg overflow-visible">
         <div className="relative w-full h-120 sm:h-160 md:h-180">
           <iframe
             src={src}
@@ -26,10 +26,8 @@ export default function Map({
             className="absolute inset-0 w-full h-full"
             style={{ 
               border: 0,
-              touchAction:'manipulation',
               WebkitOverflowScrolling: 'touch',
-             }}
-            allowFullScreen
+            }}
             allow="geolocation"
             loading="lazy"
           />

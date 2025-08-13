@@ -15,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <main className="min-h-screen pb-32">
+      <body className="antialiased overflow-x-hidden">
+        <main className="min-h-screen pb-32 overflow-x-hidden">
           {children}
         </main>
         <Footer />
