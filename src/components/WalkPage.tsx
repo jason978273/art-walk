@@ -39,6 +39,7 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
                 highlights={walk.highlights}
                 clickableHighlights={walk.clickableHighlights}
                 walkTitle={walk.title}
+                introText={walk.introText}
               />
               
               {children}

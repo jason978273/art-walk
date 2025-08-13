@@ -10,6 +10,7 @@ interface ContentCardProps {
   highlights?: string[]
   clickableHighlights?: ClickableHighlight[]
   walkTitle?: string
+  introText?: string
 }
 
 const getHighlightIcon = (type?: string) => {
@@ -44,6 +45,7 @@ export default function ContentCard({
   distance = "1 km",
   difficulty = "Easy",
   highlights = ["Public Art"],
+  introText = "",
   clickableHighlights = [],
 }: ContentCardProps) {
   return (
@@ -86,7 +88,7 @@ export default function ContentCard({
       <section className="mb-4 sm:mb-6">
         <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-[#00A1BA]">About This Walk</h3>
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-          Discover a curated art walk designed for a {walkingTime} walking distance. This route features local art installations and points of interest along the way. Plan for about {recommendedTime} to complete the entire experience, allowing time to enjoy each stop and take in the surroundings.
+          {introText || `Discover a curated art walk designed for a ${walkingTime} walking distance. This route features local art installations and points of interest along the way. Plan for about ${recommendedTime} to complete the entire experience, allowing time to enjoy each stop and take in the surroundings.`}
         </p>
       </section>
 

@@ -20,6 +20,7 @@ export type Walk = {
   highlights?: string[]
   clickableHighlights?: ClickableHighlight[]
   photoCredit?: string
+  introText?: string
 }
 
 export const walks: Walk[] = [
@@ -32,9 +33,10 @@ export const walks: Walk[] = [
     map: '/maps/amblesideMap.jpg',
     interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=97e4234b7ae4465e9835acfd9f1aeb52&page=Page&views=Ambleside',
     walkingTime: "30 min",
-    recommendedTime: "40 min",
-    distance: "1.5 km",
-    difficulty: "Moderate",
+    recommendedTime: "45 min",
+    distance: "2.0 km",
+    difficulty: "Easy",
+    introText:"Begin at the striking Squamish Welcome Figure and follow the Seawalk toward John Lawson Park. This route passes a series of waterfront artworks, with stops near the Ferry Building Gallery and Silk Purse Arts Centre, offering a blend of coastal scenery and cultural landmarks.",
     highlights: ["Ocean Views", "Waterfront Promenade", "Lions Gate Bridge", "Beach Access"],
     clickableHighlights: [
       {
@@ -67,10 +69,11 @@ export const walks: Walk[] = [
     href: '/walk/hollyburn',
     map: '/maps/hollyburnMap.jpg',
     interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=97e4234b7ae4465e9835acfd9f1aeb52&page=Page&views=Hollyburn',
-    walkingTime: "25 min",
-    recommendedTime: "40 min",
-    distance: "1.2 km",
-    difficulty: "Easy",
+    walkingTime: "30 min",
+    recommendedTime: "45 min",
+    distance: "2.2 km",
+    difficulty: "Moderate",
+    introText:"Explore the cultural heart of Hollyburn, beginning near the Seawalk and weaving inland to the West Vancouver Community Centre and Memorial Library. Along the way, enjoy a mix of outdoor installations and community-focused spaces that celebrate art in daily life.",
     highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"],
     clickableHighlights: [
       {
@@ -98,8 +101,9 @@ export const walks: Walk[] = [
     interactiveMap: 'https://dwvmaps.westvancouver.ca/portal/apps/experiencebuilder/experience/?id=97e4234b7ae4465e9835acfd9f1aeb52&page=Page&views=Dundarave',
     walkingTime: "10 min",
     recommendedTime: "20 min",
-    distance: "1.0 km",
+    distance: "0.9 km",
     difficulty: "Easy",
+    introText:"Enjoy a relaxed coastal walk through Dundarave, following the Seawalk to Dundarave Beach. Public art and seaside scenery combine here, offering a tranquil experience with a touch of West Coast character.",
     highlights: ["Dundarave Beach", "Ocean Views"],
     clickableHighlights: [
       {
