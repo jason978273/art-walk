@@ -15,7 +15,7 @@ export default function Hero({
         src={img}
         alt="Hero Background"
         fill
-        className="object-cover -z-10"
+        className="object-cover -z-10 object-center md:object-[center_20%]"
         />
       <div className="absolute inset-0 hero-gradient -z-10"></div>
       <div className="flex items-center justify-center w-full h-full px-4">

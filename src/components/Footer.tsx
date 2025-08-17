@@ -4,29 +4,81 @@ import { Mail, Globe } from 'lucide-react'
 import { SiFacebook, SiInstagram, SiX } from '@icons-pack/react-simple-icons'
 
 export default function Footer() {
-  const sponsors = [
+    const partners = [
     { src: "/images/westvan.jpg", alt: "District of West Vancouver" },
+  ]
+
+  const sponsors = [
     { src: "/images/adbia.png", alt: "Amberside and Dundarave Business Improvement Association" },
-    { src: "/images/canada.jpg", alt: "Government of Canada" },
-  ];
+  ]
+
+  const funders = [
+    { src: "/images/westvancouverfoundation-logo-full-color-rgb.png", alt: "West Vancouver Foundation" },
+    { src: "/images/gov_canada_logo.jpg", alt: "Service Canada" },
+    { src: "/images/Metro_Vancouver_Block.jpg", alt: "Metro Vancouver"},
+  ]
 
   const socialLinks = [
     { icon: SiFacebook, href: "https://www.facebook.com/wvartscouncil/", label: "Facebook" },
     { icon: SiInstagram, href: "https://www.instagram.com/wvartscouncil", label: "Instagram" },
     { icon: SiX, href: "https://x.com/WVArtsCouncil", label: "X (Twitter)" },
-  ];
+  ]
+
+  // Helper function to determine grid classes based on item count
+  const getGridClasses = (itemCount: number) => {
+    if (itemCount === 1) return 'grid grid-cols-1 justify-items-center'
+    if (itemCount === 2) return 'grid grid-cols-2 justify-items-center'
+    if (itemCount >= 3) return 'grid grid-cols-1 sm:grid-cols-3 justify-items-center'
+    return 'grid grid-cols-2 md:grid-cols-3 justify-items-center'
+  }
   
   return (
     <footer className='bg-white border-t border-gray-300 mt-auto py-8'>
       <div className='max-w-7xl mx-auto px-4'>
+        <div className='partners mb-8 text-center'>
+          <h4 className='font-semibold mb-4 text-gray-700'>Partners</h4>
+          <div className={`gap-4 ${getGridClasses(partners.length)} mx-auto max-w-4xl`}>
+            {partners.map((partner, index) => (
+              <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
+                <Image 
+                  src={partner.src}
+                  alt={partner.alt}
+                  width={120}
+                  height={0}
+                  style={{ height: "auto" }}
+                  className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className='sponsors mb-8 text-center'>
-          <h4 className='font-semibold mb-4 text-gray-700'>Our Partners and Sponsors</h4>
-          <div className=' gap-4 justify-items-center grid grid-cols-2 md:grid-cols-3 mx-auto max-w-4xl'>
+          <h4 className='font-semibold mb-4 text-gray-700'>Sponsors</h4>
+          <div className={`gap-4 ${getGridClasses(sponsors.length)} mx-auto max-w-4xl`}>
             {sponsors.map((sponsor, index) => (
               <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
                 <Image 
                   src={sponsor.src}
                   alt={sponsor.alt}
+                  width={120}
+                  height={0}
+                  style={{ height: "auto" }}
+                  className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className='funders mb-8 text-center'>
+          <h4 className='font-semibold mb-4 text-gray-700'>Funders</h4>
+          <div className={`gap-4 ${getGridClasses(funders.length)} mx-auto max-w-4xl`}>
+            {funders.map((funder, index) => (
+              <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
+                <Image 
+                  src={funder.src}
+                  alt={funder.alt}
                   width={120}
                   height={0}
                   style={{ height: "auto" }}
@@ -59,7 +111,7 @@ export default function Footer() {
                     href="mailto:publicart.wvcac@shaw.ca" 
                     className='text-sm text-gray-600 hover:text-gray-800 transition-colors'
                   >
-                    publicart.wvcac@shaw.ca
+                    westvanartscouncil@shaw.ca
                   </a>
                 </div>
                 <div className='flex items-center justify-center md:justify-start gap-2'>
@@ -110,6 +162,10 @@ export default function Footer() {
         <div className='border-t border-gray-200 pt-4'>
           <div className='text-center'>
             <p className='text-sm text-gray-600'>
+              We acknowledge that the lands on which we gather are the traditional ancestral and unceeded territories of the the Sḵwx̱wú7mesh (Squamish) Nation. It is our privilege to celebrate arts and culture alongside them.
+
+            </p>
+            <p className='text-xs text-gray-500 mt-4'>
               © {new Date().getFullYear()} West Vancouver Community Arts Council. All rights reserved.
             </p>
           </div>
