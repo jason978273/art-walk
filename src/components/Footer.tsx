@@ -82,7 +82,7 @@ export default function Footer() {
                   width={160}
                   height={0}
                   style={{ height: "auto" }}
-                  className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
+                  className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-cover' 
                 />
               </div>
             ))}
