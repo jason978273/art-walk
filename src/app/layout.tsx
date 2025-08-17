@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Public Art Walk West Vancouver",
+  title: "West Van Public Art Walk",
   description: "Explore curated walking routes through West Vancouver's" +
    "public art.",
 };
