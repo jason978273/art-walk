@@ -36,14 +36,14 @@ export default function Footer() {
     <footer className='bg-white border-t border-gray-300 mt-auto py-8'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='partners mb-8 text-center'>
-          <h4 className='font-semibold mb-4 text-gray-700'>Partners</h4>
+          <h3 className='font-semibold mb-4 text-gray-700'>PARTNERS</h3>
           <div className={`gap-4 ${getGridClasses(partners.length)} mx-auto max-w-4xl`}>
             {partners.map((partner, index) => (
               <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
                 <Image 
                   src={partner.src}
                   alt={partner.alt}
-                  width={120}
+                  width={140}
                   height={0}
                   style={{ height: "auto" }}
                   className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
@@ -54,14 +54,14 @@ export default function Footer() {
         </div>
 
         <div className='sponsors mb-8 text-center'>
-          <h4 className='font-semibold mb-4 text-gray-700'>Sponsors</h4>
+          <h3 className='font-semibold mb-4 text-gray-700'>SPONSORS</h3>
           <div className={`gap-4 ${getGridClasses(sponsors.length)} mx-auto max-w-4xl`}>
             {sponsors.map((sponsor, index) => (
               <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
                 <Image 
                   src={sponsor.src}
                   alt={sponsor.alt}
-                  width={120}
+                  width={140}
                   height={0}
                   style={{ height: "auto" }}
                   className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
@@ -72,14 +72,14 @@ export default function Footer() {
         </div>
 
         <div className='funders mb-8 text-center'>
-          <h4 className='font-semibold mb-4 text-gray-700'>Funders</h4>
+          <h3 className='font-semibold mb-4 text-gray-700'>FUNDERS</h3>
           <div className={`gap-4 ${getGridClasses(funders.length)} mx-auto max-w-4xl`}>
             {funders.map((funder, index) => (
-              <div key={index} className='flex items-center justify-center w-[140px] h-[70px] rounded-md p-2'>
+              <div key={index} className='flex items-center justify-center w-[160px] h-[70px] rounded-md p-2'>
                 <Image 
                   src={funder.src}
                   alt={funder.alt}
-                  width={120}
+                  width={160}
                   height={0}
                   style={{ height: "auto" }}
                   className='opacity-80 hover:opacity-100 transition-opacity max-w-full max-h-full object-contain' 
