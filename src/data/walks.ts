@@ -40,10 +40,10 @@ export const walks: Walk[] = [
     highlights: ["Ocean Views", "Waterfront Promenade", "Lions Gate Bridge", "Beach Access"],
     clickableHighlights: [
       {
-        name: "Van Cha",
-        url: "https://www.instagram.com/vanchatea/?hl=en",
+        name: "Featured Business Opportunity",
+        url: "mailto:publicart.wvcac@shaw.ca?subject=Business Partnership Inquiry",
         type: "sponsor",
-        description: "Chinese Style Tea House"
+        description: "Interested in being featured? Contact us!"
       },
       {
         name: "Ambleside Park Information",
