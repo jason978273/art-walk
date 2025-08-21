@@ -108,9 +108,9 @@ export const walks: Walk[] = [
     clickableHighlights: [
       {
         name: "Dundarave Village Shopping",
-        url: "https://dundaravevillage.ca",
+        url: "https://adbia.ca",
         type: "info",
-        description: "Local shops and businesses"
+        description: "Learn more about Local shops and businesses"
       },
       {
         name: "Dundarave Park",
