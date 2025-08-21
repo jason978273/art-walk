@@ -77,16 +77,16 @@ export const walks: Walk[] = [
     highlights: ["Urban Art", "Community Center", "Shopping District", "Local Cafes"],
     clickableHighlights: [
       {
-        name: "Future Sponsor Here",
-        url: "https://batwcoffee.com/",
+        name: "Featured Business Opportunity",
+        url: "mailto:publicart.wvcac@shaw.ca?subject=Business Partnership Inquiry",
         type: "sponsor",
-        description: "Local coffee roaster with fresh brews"
+        description: "Interested in being featured? Contact us!"
       },
       {
-        name: "Future Sponsor Here",
-        url: "https://redlionbarandgrill.net",
-        type: "sponsor",
-        description: "Popular pub with local beers"
+        name: "West Vancouver Community Centre",
+        url: "https://westvancouver.ca/parks-recreation/facilities/west-vancouver-community-centre-aquatic-centre",
+        type: "info",
+        description: "Home to a broad range of community programs and services"
       }
     ],
     photoCredit: "Photo by District of West Vancouver"
