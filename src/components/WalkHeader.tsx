@@ -17,7 +17,7 @@ export default function WalkHeader() {
       >
         <MoveLeft className='ml-2 mr-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 hidden sm:block'/>
         <House className='ml-2 mr-2 w-4 h-4 transition-transform duration-200 block sm:hidden'/>
-        <span className="font-medium hidden sm:inline text-sm sm:text-base lg:text-lg">Back to Home</span>
+        <span className="font-body font-medium hidden sm:inline text-sm sm:text-base lg:text-lg">Back to Home</span>
       </Link>
 
       <nav className="w-full lg:w-auto overflow-x-auto">
@@ -29,8 +29,8 @@ export default function WalkHeader() {
                 href={walkItem.href}
                 className={`px-2 py-2.5 sm:px-3 sm:py-2.5 lg:px-4 lg:py-3 rounded-md font-medium transition-all duration-200 text-sm lg:text-base whitespace-nowrap min-h-[44px] flex items-center justify-center text-center ${
                   path.replace(/\/$/, '') === walkItem.href.replace(/\/$/, '')
-                  ? 'theme-bg-secondary text-white font-semibold shadow-sm hover:underline'
-                  : 'text-white hover:opacity-80 hover:theme-bg-secondary hover:underline transition-colors'
+                  ? 'bg-white theme-text-primary font-semibold underline hover:underline'
+                  : 'text-white hover:opacity-80 hover:underline transition-colors'
                 }`}
                 >
                 {walkItem.title}

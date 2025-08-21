@@ -2,17 +2,23 @@
 
 :root {
   --text-primary: #2eaf9e;    
-  --text-secondary: #d81963;
+  --text-secondary: #2eaf9e;
   --text-muted: #6b7280;
   --bg-primary: #2eaf9e;
-  --bg-secondary: #d81963;
+  --bg-secondary: #00A1BA;
   --border-color: #ffffff;
 
   --background: #ffffff;
   --foreground: #171717;
   --font-title: 'Century Gothic', 'Futura', 'Avant Garde', sans-serif;
-  --font-body: 'Avenir'; 
+  --font-body: 'Avenir', sans-serif; 
 }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 .theme-text-primary { color: var(--text-primary); }
 .theme-text-secondary { color: var(--text-secondary); }
 .theme-text-muted { color: var(--text-muted); }

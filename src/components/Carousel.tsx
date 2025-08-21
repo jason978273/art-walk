@@ -20,9 +20,9 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className="relative max-w-6xl mx-auto bg-white">
+    <div className="relative max-w-6xl mx-auto bg-white my-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center my-8 theme-text-primary">
+        <h2 className="text-4xl font-bold text-center my-12 theme-text-primary">
           Explore the Curated Walks
         </h2>
         <div className="relative max-w-6xl mx-auto">

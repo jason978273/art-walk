@@ -13,7 +13,6 @@ export default function AmblesideWalk() {
       <div className='max-w-full md:max-w-6xl lg:max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-4 sm:py-8'>
         <WalkHeader />
         <WalkPage walk={walk}>
-          {/* Add specific Ambleside content here */}
         </WalkPage>
       </div>
     </div>

@@ -1,8 +1,10 @@
+'use client'
+
 import React from "react";
 import { Walk } from "../data/walks";
-import Image from "next/image";
 import Map from "./Map";
 import ContentCard from "./ContentCard";
+import Download from "./Download";
 
 interface WalkPageProps {
     walk: Walk;
@@ -17,16 +19,17 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
                 {walk.title}
               </h1>          
               
-              <div className="w-full mx-auto">
-                  <Image src={walk.map} alt='Walk Static Map' width={1200} height={600} className="w-full h-auto object-cover rounded-lg"/>
-              </div>
-              
               {walk.interactiveMap && (
                   <Map 
                       src={walk.interactiveMap} 
                       walkTitle={walk.title}
                   />
               )}
+
+              <Download 
+                mapUrl={walk.map}
+                walkTitle={walk.title}
+              />
 
               <ContentCard 
                 walkingTime={walk.walkingTime}
@@ -36,6 +39,7 @@ export default function WalkPage({ walk, children }: WalkPageProps) {
                 highlights={walk.highlights}
                 clickableHighlights={walk.clickableHighlights}
                 walkTitle={walk.title}
+                introText={walk.introText}
               />
               
               {children}

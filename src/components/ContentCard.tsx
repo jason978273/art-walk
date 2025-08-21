@@ -10,6 +10,7 @@ interface ContentCardProps {
   highlights?: string[]
   clickableHighlights?: ClickableHighlight[]
   walkTitle?: string
+  introText?: string
 }
 
 const getHighlightIcon = (type?: string) => {
@@ -28,11 +29,11 @@ const getHighlightIcon = (type?: string) => {
 const getHighlightStyle = (type?: string) => {
   switch (type) {
     case 'sponsor':
-      return "bg-gradient-to-r from-yellow-700 to-yellow-500 hover:from-yellow-700 hover:to-yellow-600 text-white shadow-lg hover:shadow-xl"
+      return "bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white shadow-lg hover:shadow-xl"
     case 'info':
-      return "bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-lg hover:shadow-xl"
+      return "bg-gradient-to-r from-blue-500 to-blue-300 hover:from-blue-400 hover:to-blue-300 text-white shadow-lg hover:shadow-xl"
     case 'attraction':
-      return "bg-gradient-to-r from-purple-700 to-purple-500 hover:from-purple-700 hover:to-purple-600 text-white shadow-lg hover:shadow-xl"
+      return "bg-gradient-to-r from-purple-500 to-purple-400 hover:from-purple-400 hover:to-purple-300 text-white shadow-lg hover:shadow-xl"
     default:
       return "bg-gradient-to-r from-gray-700 to-gray-500 hover:from-gray-700 hover:to-gray-600 text-white shadow-lg hover:shadow-xl"
   }
@@ -44,16 +45,17 @@ export default function ContentCard({
   distance = "1 km",
   difficulty = "Easy",
   highlights = ["Public Art"],
+  introText = "",
   clickableHighlights = [],
 }: ContentCardProps) {
   return (
-    <div className="rounded-lg p-4 sm:p-6">
+    <div className="rounded-lg sm:p-2">
       <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#00A1BA]">Walk Details</h2>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6">
         <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0 flex-1">
-            <p className="text-xs sm:text-sm opacity-75 leading-tight">Walking</p>
+            <p className="text-xs sm:text-sm opacity-90 leading-tight">Walking</p>
             <p className="font-semibold text-sm sm:text-base text-white leading-tight">{walkingTime}</p>
           </div>
         </div>
@@ -61,7 +63,7 @@ export default function ContentCard({
         <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Route className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0 flex-1">
-            <p className="text-xs sm:text-sm opacity-75 leading-tight">Total</p>
+            <p className="text-xs sm:text-sm opacity-90 leading-tight">Total</p>
             <p className="font-semibold text-sm sm:text-base text-white leading-tight">{recommendedTime}</p>
           </div>
         </div>
@@ -69,7 +71,7 @@ export default function ContentCard({
         <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0 flex-1">
-            <p className="text-xs sm:text-sm opacity-75 leading-tight">Distance</p>
+            <p className="text-xs sm:text-sm opacity-90 leading-tight">Distance</p>
             <p className="font-semibold text-sm sm:text-base text-white leading-tight">{distance}</p>
           </div>
         </div>
@@ -77,7 +79,7 @@ export default function ContentCard({
         <div className="flex items-center text-white font-semibold p-2.5 rounded-lg bg-[#00A1BA]/80 min-w-[120px]">
           <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
           <div className="min-w-0 flex-1">
-            <p className="text-xs sm:text-sm opacity-75 leading-tight">Difficulty</p>
+            <p className="text-xs sm:text-sm opacity-90 leading-tight">Difficulty</p>
             <p className="font-semibold text-sm sm:text-base text-white leading-tight">{difficulty}</p>
           </div>
         </div>
@@ -86,7 +88,7 @@ export default function ContentCard({
       <section className="mb-4 sm:mb-6">
         <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-[#00A1BA]">About This Walk</h3>
         <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-          Discover a curated art walk designed for a {walkingTime} walking distance. This route features local art installations and points of interest along the way. Plan for about {recommendedTime} to complete the entire experience, allowing time to enjoy each stop and take in the surroundings.
+          {introText || `Discover a curated art walk designed for a ${walkingTime} walking distance. This route features local art installations and points of interest along the way. Plan for about ${recommendedTime} to complete the entire experience, allowing time to enjoy each stop and take in the surroundings.`}
         </p>
       </section>
 
@@ -97,7 +99,7 @@ export default function ContentCard({
             {highlights.map((highlight, index) => (
               <span 
                 key={index}
-                className="px-2 sm:px-3 py-1 bg-gray-300/50 text-gray-700 font-semibold rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md cursor-default"
+                className="px-2 sm:px-3 py-1 bg-gray-300/50 text-gray-600 font-semibold rounded-full text-xs sm:text-sm hover:scale-105 transition-transform duration-200 shadow-sm hover:shadow-md cursor-default"
               >
                 {highlight}
               </span>
