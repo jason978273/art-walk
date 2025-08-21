@@ -115,7 +115,7 @@ export const walks: Walk[] = [
       {
         name: "Dundarave Park",
         url: "https://westvancouver.ca/parks-recreation/parks-trails/dundarave-park",
-        type: "attraction",
+        type: "info",
         description: "Beautiful beach park with picnic areas"
       }
     ],
